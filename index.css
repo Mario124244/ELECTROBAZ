@@ -1,0 +1,228 @@
+/* styles.css */
+body {
+    margin: 0;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    height: 30px;
+    margin-right: 15px;
+    vertical-align: middle; /* Asegura que el SVG esté alineado correctamente */
+}
+
+.logo span {
+    display: flex;
+    padding-top: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left:80px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.hero-section {
+    position: relative;
+    background: url('img/scott-blake-x-ghf9LjrVg-unsplash\ \(1\).jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.192); /* capa blanca semi-transparente */
+    z-index: 1;
+}
+
+.hero-content {
+    
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    margin: 180px;
+}
+
+.hero-content h1 {
+    font-size: 5em;
+    
+    font-family: 'Karantina', cursive;
+}
+
+.hero-content h6 {
+    font-size: 1.5em;
+    display: flex;
+   justify-content: left;
+   font-family: "Karma", serif;
+  
+    
+}
+.hero-section button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: start;
+}
+.buttons {
+    margin-top: 20px;
+    
+}
+
+.buttons .btn {
+    
+    margin-right: 60px;
+    background-color: #000000;
+    border: none;
+    
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 170px;
+    height: 40px;
+    border-radius: 80px;
+}
+
+.buttons .btn:hover {
+    background-color: #0056b3;
+}
+.titulos{
+    display: grid;
+    justify-content: end;
+    margin-right: 200px;
+}
+.titulos h2{
+    font-family: "League Gothic", sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    
+}
+.titulos h6{
+    font-family: "Karma", serif;
+}
+.container-icons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px;
+}
+
+.item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    height: 80px;
+    width: 80px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Cambia align-content a align-items */
+    margin-bottom: 10px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+}
+/* Frame 4 */
+
+.workers-section{
+    display: flex;
+
+
+
+    text-align: left;
+}
+.workers-images{
+    position:relative;
+    width: 100%;
+}
+.worker-img{
+    position: absolute;
+    
+}
+.worker-img1{
+    top: 0;
+    left: 10%;
+    width: 30%;
+    height: 968px;
+    
+    
+}
+.worker-img2{
+    top: 10%;
+    left: 42%;
+    width: 30%;
+    height: 880px;
+    
+    
+}
+.worker-img3{
+    
+    top: 15%;
+    left: 63%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.workers-content {
+    width: 50%;
+    padding-top: 180px;
+    margin-right: 200px;
+}
+.workers-content h2{
+    font-family: "Kenia", sans-serif;
+}
