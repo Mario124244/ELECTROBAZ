@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ELECTROBAZ</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=League+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Kenia&family=League+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
 </head>
 <body>
@@ -26,20 +27,20 @@
                 <span>Electrobaz</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     
     <div class="hero-section">
-        <div class="overlay"></div>
+        <div class="overlay" id="inicio"></div>
         <div class="hero-content">
-            <h6><span>Al servicio del cliente</span></h6>
-            <h1><span>Ingeniero Electricista <br> Altamente Capacitado</span></h1>
+            <h6 id="typed-text-1"><span>Al servicio del cliente</span></h6>
+            <h1 id="typed-text-2"><span>Ingeniero Electricista<br>Altamente Capacitado</span></h1>
             <div class="buttons">
                 <button class="btn">Botón 1</button>
                 <button class="btn">Botón 2</button>
@@ -47,11 +48,14 @@
         </div>
     </div>
 
+<div class="hero-section2" >
+    <br id="servicios">
 <br>
 <br>
 <br>
-
-    <div class="hero-section2">
+<br>
+<div>
+    
         
         <div class="titulos">
             
@@ -72,7 +76,7 @@
                             </svg>
                             
                     </div>
-                    <div class="title">Titulo</div>
+                    <div class="title1">Titulo</div>
                     <div class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores enim harum totam adipisci corporis ipsam sunt optio magnam maxime ipsum ullam voluptate sit, reprehenderit qui architecto quam iure non tempora.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores enim harum totam adipisci corporis ipsam sunt optio magnam maxime ipsum ullam voluptate sit, reprehenderit qui architecto quam iure non tempora.</div>
                 </div>
 
@@ -84,7 +88,7 @@
                             
                             
                     </div>
-                    <div class="title">Titulo</div>
+                    <div class="title1">Titulo</div>
                     <div class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores enim harum totam adipisci corporis ipsam sunt optio magnam maxime ipsum ullam voluptate sit, reprehenderit qui architecto quam iure non tempora.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores enim harum totam adipisci corporis ipsam sunt optio magnam maxime ipsum ullam voluptate sit, reprehenderit qui architecto quam iure non tempora.</div>
                 </div>
 
@@ -97,7 +101,7 @@
                             
                             
                     </div>
-                    <div class="title">Titulo</div>
+                    <div class="title1">Titulo</div>
                     <div class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores enim harum totam adipisci corporis ipsam sunt optio magnam maxime ipsum ullam voluptate sit, reprehenderit qui architecto quam iure non tempora.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores enim harum totam adipisci corporis ipsam sunt optio magnam maxime ipsum ullam voluptate sit, reprehenderit qui architecto quam iure non tempora.</div>
                 </div>
 
@@ -113,7 +117,7 @@
                             </defs>
                             </svg>
                     </div>
-                    <div class="title">Titulo</div>
+                    <div class="title1">Titulo</div>
                     <div class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores enim harum totam adipisci corporis ipsam sunt optio magnam maxime ipsum ullam voluptate sit, reprehenderit qui architecto quam iure non tempora.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores enim harum totam adipisci corporis ipsam sunt optio magnam maxime ipsum ullam voluptate sit, reprehenderit qui architecto quam iure non tempora.</div>
                 </div>
             </div>
@@ -122,6 +126,7 @@
 
         </div>
     </div>
+</div>
 <br>
 <br>
 <br>
@@ -135,30 +140,100 @@
 <br>
 <br>
 
-
-
- <div class="workers-section">
-<div class="workers-images">
-<img src="img/uno.jpg" alt="" class="worker-img worker-img1">
-<img src="img/dos.jpg" alt="" class="worker-img worker-img2">
-<img src="img/scott-blake-x-ghf9LjrVg-unsplash (1).jpg" alt=""class="worker-img worker-img3">
+<section id="nosotros">
+<div class="workers-section">
+    <div class="workers-images">
+        <img src="img/uno.jpg" alt="" class="worker-img worker-img1">
+        <img src="img/dos.jpg" alt="" class="worker-img worker-img2">
+        <img src="img/scott-blake-x-ghf9LjrVg-unsplash (1).jpg" alt="" class="worker-img worker-img3">
+        <img src="img/american-public-power-association-VuR4oHZ3ucc-unsplash.jpg" alt="" class="worker-img worker-img4">
+        <img src="img/anton-dmitriev-kBKOaghy8mU-unsplash.jpg" alt="" class="worker-img worker-img5">
+    </div>
+    <div class="workers-content">
+        <h2 class="text-center">Trabajadores Especializados <br> en el Área</h2>
+        <p class="text-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur consequuntur quam illum officia in temporibus porro ab minima? Quam aspernatur incidunt minima recusandae dolore aut molestiae, nesciunt quo totam?<br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur consequuntur quam illum officia in temporibus porro ab minima? Quam aspernatur incidunt minima recusandae dolore aut molestiae, nesciunt quo totam?<br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur consequuntur quam illum officia in temporibus porro ab minima? Quam aspernatur incidunt minima recusandae dolore aut molestiae, nesciunt quo totam?<br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur consequuntur quam illum officia in temporibus porro ab minima? Quam aspernatur incidunt minima recusandae dolore aut molestiae, nesciunt quo totam?<br>
+        </p>
+    </div>
 </div>
-<div class="workers-content">
-    <h2 class="text-center">Trabajadores Especializados <br>
-    en el Area</h2>
-    <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur consequuntur quam illum officia in temporibus porro ab minima? Quam aspernatur incidunt minima recusandae dolore aut molestiae, nesciunt quo totam?<br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur consequuntur quam illum officia in temporibus porro ab minima? Quam aspernatur incidunt minima recusandae dolore aut molestiae, nesciunt quo totam?<br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur consequuntur quam illum officia in temporibus porro ab minima? Quam aspernatur incidunt minima recusandae dolore aut molestiae, nesciunt quo totam?<br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur consequuntur quam illum officia in temporibus porro ab minima? Quam aspernatur incidunt minima recusandae dolore aut molestiae, nesciunt quo totam?<br>
+</section>
+
+
+<div class="seccion5">
+
+
+<div class="swiper" id="proyectos">
+    <!-- Additional required wrapper -->
+     <h2>Proyectos</h2>
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="img/scott-blake-x-ghf9LjrVg-unsplash (1).jpg" alt="">
+            <div class="title">
+                <span>Trabajo 1</span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/anton-dmitriev-kBKOaghy8mU-unsplash.jpg" alt="">
+            <div class="title">
+                <span>Trabajo 2</span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/anton-dmitriev-kBKOaghy8mU-unsplash.jpg" alt="">
+            <div class="title">
+                <span>Trabajo 2</span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/anton-dmitriev-kBKOaghy8mU-unsplash.jpg" alt="">
+            <div class="title">
+                <span>Trabajo 2</span>
+            </div>
+        </div>
         
-    </p>
+        <!-- More slides as needed -->
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev" style="color: rgba(0, 0, 0, 0);"></div>
+    <div class="swiper-button-next" style="color: rgba(0, 0, 0, 0);"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
 </div>
 
+<section id="contacto">
+<div class="contact-section">
+    <div class="overlay"></div>
+    <div class="form-container">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <p><strong>WhatsApp:</strong> +123456789</p>
+            <p><strong>Teléfono:</strong> +987654321</p>
+            <p><strong>Correo Electrónico:</strong> contacto@electrobaz.com</p>
+            <p><strong>Facebook:</strong> <a href="https://facebook.com/electrobaz" target="_blank">Electrobaz</a></p>
+        </div>
+        
+    </div>
 </div>
-   
+</div>
 
+
+
+
+
+
+
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js" asp-append-version="true"></script>
+   
 </body>
 </html>
