@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 
+
 .navbar {
     position: fixed;
     top: 0;
@@ -27,8 +28,6 @@ body {
 }
 
 .logo span {
-    display: flex;
-    padding-top: 5px;
     font-size: 1em;
     font-weight: bold;
     color: #333;
@@ -53,6 +52,12 @@ body {
 
 .nav-links a:hover {
     color: #007bff;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 
@@ -244,7 +249,7 @@ body {
 }
 
 .worker-img2 {
-    top: 10%;
+    top: 90px;
     left: 42%;
     width: 30%;
     height: 880px;
@@ -365,8 +370,8 @@ body {
     justify-content: space-around; /* Ajusta el espacio entre las tarjetas */
     padding: 20px;
     margin-bottom: 100px;
-    
-     /* Ajusta el espacio alrededor del contenedor */
+    margin-top: 100px;
+    background-color: #ffffff; /* Ajusta el espacio alrededor del contenedor */
 }
 
 
@@ -464,11 +469,20 @@ body {
     .nav-links {
         flex-direction: column;
         width: 100%;
+        display: none;
     }
 
     .nav-links li {
         margin-left: 0;
         margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
     }
 
     .hero-section {
